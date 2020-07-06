@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Font Awesome Script-->
+    <script
+      src="https://kit.fontawesome.com/13bcfb69b0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!--jQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Doc -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Position Size Calculator</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <!-- NavBar Beta -->
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#"
+          >Sterio<#> <i class="fas fa-calculator"></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <!--Home <Active>-->
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="/home/kirillbondarenko/Desktop/finX/home/home.html"
+                >Home<span class="sr-only">(current)</span></a
+              >
+            </li>
+
+            <!--Dropdown-->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Calculators
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  class="dropdown-item"
+                  href="/home/kirillbondarenko/Desktop/finX/posCalc/posCalc.html"
+                  >Position Calculator</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="/home/kirillbondarenko/Desktop/finX/finCalc/finCalc.html"
+                  >Finance Calculator
+                </a>
+                <a
+                  class="dropdown-item"
+                  href="/home/kirillbondarenko/Desktop/finX/mrCalc/mrCalc.html"
+                  >Mortgage Payments
+                </a>
+              </div>
+            </li>
+
+            <!--Link-->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/home/kirillbondarenko/Desktop/finX/about/about.html"
+                >About</a
+              >
+            </li>
+
+            <!--Link-->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/home/kirillbondarenko/Desktop/finX/charts/charts.html"
+                >Charts <i class="far fa-chart-bar"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container aboutText">
+        <h1 class="h1 text-center my-5 p-4">
+          <span
+            style="
+              border-bottom: #c51f5d 2px dashed;
+              border-top: #c51f5d 2px dashed;
+            "
+            >About</span
+          >
+        </h1>
+        <div class="row p-5">
+          <h2 class="h2">RRR</h2>
+          <blockquote class="blockquote">
+            <p>
+              The risk/reward ratio marks the prospective reward an investor can
+              earn, for every dollar he or she risks on an investment. Many
+              investors use risk/reward ratios to compare the expected returns
+              of an investment with the amount of risk they must undertake to
+              earn these returns. Consider the following example: an investment
+              with a risk-reward ratio of 1:7 suggests that an investor is
+              willing to risk $1, for the prospect of earning $7. Alternatively,
+              a risk/reward ratio of 1:3 signals that an investor should expect
+              to invest $1, for the prospect of earning $3 on his investment.
+            </p>
+            <footer class="blockquote-footer">
+              <cite title="Source Title"
+                ><a
+                  href="https://www.investopedia.com/terms/r/riskrewardratio.asp"
+                  target="_blank"
+                  >Investopedia, 2020</a
+                ></cite
+              >
+            </footer>
+          </blockquote>
+        </div>
+        <div class="row p-5">
+          <h2 class="h2">Standard Lot</h2>
+          <blockquote class="blockquote">
+            <p>
+              A standard lot is the equivalent of 100,000 units of the base
+              currency in a forex trade. A standard lot is similar to trade
+              size. It is one of the three commonly known lot sizes; the other
+              two are mini-lot and micro-lot.
+            </p>
+            <footer class="blockquote-footer">
+              <cite title="Source Title"
+                ><a
+                  href="https://www.investopedia.com/terms/s/standard-lot.asp"
+                  target="_blank"
+                  >Investopedia, 2020</a
+                ></cite
+              >
+            </footer>
+          </blockquote>
+        </div>
+        <div class="row p-5">
+          <h2 class="h2">Present Value of an Annuity</h2>
+          <blockquote class="blockquote">
+            <p>
+              The present value of an annuity is the current value of future
+              payments from an annuity, given a specified rate of return, or
+              discount rate. The higher the discount rate, the lower the present
+              value of the annuity.
+            </p>
+            <footer class="blockquote-footer">
+              <cite title="Source Title"
+                ><a
+                  href="https://www.investopedia.com/terms/p/present-value-annuity.asp"
+                  target="_blank"
+                  >Investopedia, 2020</a
+                ></cite
+              >
+            </footer>
+          </blockquote>
+        </div>
+        <div class="row p-5">
+          <h2 class="h2">Present Value of an Annuity</h2>
+          <blockquote class="blockquote">
+            <p>
+              The present value of an annuity is the current value of future
+              payments from an annuity, given a specified rate of return, or
+              discount rate. The higher the discount rate, the lower the present
+              value of the annuity.
+            </p>
+            <footer class="blockquote-footer">
+              <cite title="Source Title"
+                ><a
+                  href="https://www.investopedia.com/terms/p/present-value-annuity.asp"
+                  target="_blank"
+                  >Investopedia, 2020</a
+                ></cite
+              >
+            </footer>
+          </blockquote>
+        </div>
+        <div class="row p-5">
+          <h2 class="h2">Interest</h2>
+          <blockquote class="blockquote">
+            <p>
+              Interest is the charge for the privilege of borrowing money,
+              typically expressed as annual percentage rate (APR). Interest can
+              also refer to the amount of ownership a stockholder has in a
+              company, usually expressed as a percentage.
+            </p>
+            <footer class="blockquote-footer">
+              <cite title="Source Title"
+                ><a
+                  href="https://www.investopedia.com/terms/i/interest.asp"
+                  target="_blank"
+                  >Investopedia, 2020</a
+                ></cite
+              >
+            </footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <!--MODAL TO DO-->
+      <div
+        class="modal fade"
+        id="myModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-top" role="document">
+          <div class="modal-content py-md-5 px-md-4 p-sm-3 p-4">
+            <h2 class="h2 text-center">Thank you</h2>
+            <h4 class="text-center">
+              for visiting my project!
+            </h4>
+            <i class="fas fa-heart align-self-center"></i>
+            <div class="row justify-content-center my-4">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img.jpg" alt="Card image cap" />
+                <div class="card-body">
+                  <h5 class="card-title">Web Portfolio</h5>
+                  <p class="card-text">
+                    Please, check out some of my other web-projects. Let's
+                    connect!
+                  </p>
+                  <a
+                    href="https://k-sterio.com/"
+                    target="_blank"
+                    class="btn btn-success"
+                    >Check it!</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="about.js"></script>
+  </body>
+</html>

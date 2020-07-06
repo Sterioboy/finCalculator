@@ -1,0 +1,13 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #243447;
+  letter-spacing: 1.5px;
+}
+
+#textCharts {
+  color: #c51f5d;
+}

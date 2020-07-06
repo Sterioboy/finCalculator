@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Font Awesome Script-->
+    <script
+      src="https://kit.fontawesome.com/13bcfb69b0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Doc -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--jQuery-->
+
+    <!--Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Position Size Calculator</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <!-- NavBar Beta -->
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#"
+          >Sterio<#> <i class="fas fa-calculator"></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="true"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <!--Home <Active>-->
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="/home/kirillbondarenko/Desktop/finX/home/home.html"
+                >Home<span class="sr-only">(current)</span></a
+              >
+            </li>
+
+            <!--Dropdown-->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Calculators
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  class="dropdown-item"
+                  href="/home/kirillbondarenko/Desktop/finX/posCalc/posCalc.html"
+                  >Position Calculator</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="/home/kirillbondarenko/Desktop/finX/finCalc/finCalc.html"
+                  >Finance Calculator
+                </a>
+                <a
+                  class="dropdown-item"
+                  href="/home/kirillbondarenko/Desktop/finX/mrCalc/mrCalc.html"
+                  >Mortgage Payments
+                </a>
+              </div>
+            </li>
+
+            <!--Link-->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/home/kirillbondarenko/Desktop/finX/about/about.html"
+                >About</a
+              >
+            </li>
+
+            <!--Link-->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/home/kirillbondarenko/Desktop/finX/charts/charts.html"
+                >Charts <i class="far fa-chart-bar"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--Main-->
+    <main>
+      <section class="text-center home p-4">
+        <!--V 2.0-->
+        <form>
+          <!--0th Row-->
+          <h1 class="h1 text-center mb-3">Future Value of an Annuity</h1>
+          <!--1st Row-->
+          <div class="form-row my-1">
+            <div class="col-md-4 mb-3">
+              <label for="accBalance">Invest Sum</label>
+              <input
+                type="number"
+                class="form-control"
+                id="accBalance"
+                name="accBalance"
+                placeholder="Enter your account balance"
+                min="1"
+                step=".01"
+                required
+              />
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="intBalance">I/Y %</label>
+              <input
+                type="number"
+                class="form-control"
+                id="intBalance"
+                name="intBalance"
+                placeholder="Interest on account in %"
+                min="1"
+                step=".01"
+                required
+              />
+              <small class="form-text text-muted">
+                Compounded Yearly
+              </small>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="pmtSelect">PMT</label>
+              <select class="form-control" id="pmtSelect" name="pmtSelect">
+                <option value="1">beginning</option>
+                <option value="2">end</option>
+              </select>
+              <small class="form-text text-muted">
+                Annuity Payment
+              </small>
+            </div>
+          </div>
+
+          <!--2nd Row-->
+          <div class="form-row my-1">
+            <div class="col-md-6 mb-3">
+              <label for="pmtBalance">PMT</label>
+              <input
+                type="number"
+                class="form-control"
+                id="pmtBalance"
+                name="pmtBalance"
+                placeholder="Annuity Payment"
+                min="1"
+                step=".01"
+                required
+              />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="nBalance">Years</label>
+              <input
+                type="number"
+                class="form-control"
+                id="nBalance"
+                name="nBalance"
+                placeholder="Number of payments"
+                min="1"
+                required
+              />
+              <small class="form-text text-muted">
+                Number of years
+              </small>
+            </div>
+          </div>
+
+          <button
+            class="btn my-2"
+            data-toggle="#"
+            type="submit"
+            id="submit"
+            data-target="#"
+          >
+            Done!
+          </button>
+        </form>
+
+        <!--Result Table-->
+        <table class="table table-bordered my-3 home1" id="output">
+          <tbody>
+            <tr>
+              <td class="text-left">Future Value of the Annuity ($)</td>
+              <td id="annFutVal"></td>
+            </tr>
+            <tr>
+              <td class="text-left">Future Value of the Deposit ($)</td>
+              <td id="depFutVal"></td>
+            </tr>
+            <tr>
+              <td class="text-left">Total amount in the Account ($)</td>
+              <td id="totalDeposit"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!--Footer-->
+        <div id="footer" class="container-fluid">
+          <div class="row">
+            <div class="col-12 text-center pt-2">
+              <a
+                class="hvr-wobble-horizontal"
+                href="https://k-sterio.com/"
+                target="_blank"
+                >Developed by Kirill Bondarenko 2020.</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
